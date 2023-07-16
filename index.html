@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1> What are you going to plan?</h1>
+            <div class="btn">
+                <button class="plus" onclick="openpopup()"><h2 id="plus">+</h2></button>
+                <h2>Add new</h2>
+            </div>
+        </header>
+
+        <div class="popup" id="popup">
+            <h2 id="titre">Add a new todo</h2>
+
+            <button id="x" onclick="closepopup()"><h3>X</h3></button>
+
+
+            <form id="form">
+
+                <label for="title" class="form">Enter your todo title:</label>
+                <input type="text" name="title" class="form" id="title">
+                <label for="description" class="form">Enter your todo Description:</label>
+                <input type="text" name="description" class="form" id="description">
+                <label for="deadline" class="form">Enter your todo DeadLine:</label>
+                <input type="date" name="deadline" class="form" id="date">
+
+                <button id="btnform" type="submit">Add and Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
